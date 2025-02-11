@@ -7,3 +7,23 @@ body {
   max-height: 150px;
   object-fit: contain;
 }
+
+.Login {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 30vw;
+  padding: 2vw 1vw;
+  background-color: #A0C4FF;
+  border-radius: 0 0 10px 10px;
+}
+
+input {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 1vw 1vw;
+  outline: none;
+  margin: 5px;
+
+}
