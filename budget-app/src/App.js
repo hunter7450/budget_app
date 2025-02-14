@@ -32,10 +32,15 @@ function App() {
     <form className="Login" onSubmit={handleSubmit(onSubmit)}>
       <input type="email" {...register("email", {required: true})}/>
       {errors.email && <span style={{color: "red"}}>
-        *Email* is mandatory </span>}
+        Please enter email </span>}
       <input type="password" {...register("password")} />
       <input type={"submit"}
+        value="Login"
         style={{ backgroundColor : "#0F3D91"}} />
+      <input type={"submit"}
+      value="Register"
+        style={{ backgroundColor : "#FFFFFF"}}/>
+      
 
     </form>
 
