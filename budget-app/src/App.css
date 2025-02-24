@@ -1,64 +1,74 @@
 body {
-  background-color: #A0C4FF !important;
+  background-color: #A0C4FF; /* Light blue background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.LoginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .Cover {
   width: 100%;
-  max-height: 150px;
-  object-fit: contain;
+  max-width: 300px;  
+  border-radius: 10px 10px 0 0;
 }
 
 .Login {
-  text-align: center;
   display: flex;
   flex-direction: column;
-  margin: auto;
-  width: 30vw;
-  padding: 2vw 1vw;
-  background-color: #A0C4FF;
-  border-radius: 0 0 10px 10px;
+  align-items: center;
+  padding: 20px;
 }
 
-input {
-  width: 100%;
-  padding: 12px;
+.Login input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
   border: 1px solid #ccc;
-  border: 8px;
+  border-radius: 5px;
   font-size: 16px;
-  margin-bottom: 10px;
- 
 }
 
-input:focus {
-  border-color: #0F3D91;
-  outline: none;
-  box-shadow: 0 0 5px rgba(15, 61, 145, 0.5);
-}
-
-input[type="submit"] {
+.loginBtn {
   width: 100%;
-  padding: 12px;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background 0.3s ease-in-out;
-}
-
-input[type="submit"][value="Login"] {
+  padding: 10px;
   background-color: #0F3D91;
   color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-/* Register button */
-input[type="submit"][value="Register"] {
+.registerBtn {
+  width: 100%;
+  padding: 10px;
   background-color: white;
   color: black;
-  border: 1px solid black;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-/* Hover effect */
-input[type="submit"]:hover {
+.loginBtn:hover {
   opacity: 0.8;
+  border-color: #333;
+  transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 
+.registerBtn:hover{
+  background-color: #f0f0f0;
+  border-color: #333;
+  transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+}

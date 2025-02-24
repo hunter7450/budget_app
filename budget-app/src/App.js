@@ -1,6 +1,6 @@
 import cover from './cover.svg';
 import './App.css';
-import { useForm } from "react-hook-form"
+import { useForm } from "react-hook-form";
 import React from 'react';
 
 function App() {
@@ -25,24 +25,20 @@ function App() {
   return (
     // React Fragments
     <>
-    <div className="App">
-      <img src={cover} alt="Cover" className="Cover"/>
-    </div>
+    <div className="LoginContainer">
+  <img src={cover} alt="Cover" className="Cover" />
 
-    <form className="Login" onSubmit={handleSubmit(onSubmit)}>
-      <input type="email" {...register("email", {required: true})}/>
-      {errors.email && <span style={{color: "red"}}>
-        Please enter email </span>}
-      <input type="password" {...register("password")} />
-      <input type={"submit"}
-        value="Login"
-        style={{ backgroundColor : "#0F3D91"}} />
-      <input type={"submit"}
-      value="Register"
-        style={{ backgroundColor : "#FFFFFF"}}/>
-      
+  <form className="Login" onSubmit={handleSubmit(onSubmit)}>
+    <input type="email" {...register("email", { required: true })} />
+    {errors.email && <span style={{ color: "red" }}>Please enter email</span>}
 
-    </form>
+    <input type="password" {...register("password")} />
+
+    <input type="submit" value="Login" className="loginBtn" />
+    <input type="submit" value="Register" className="registerBtn" />
+  </form>
+</div>
+
 
     </>
   );
